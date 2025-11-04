@@ -1,0 +1,184 @@
+# PRESTAN CPR Rental Platform - .gitignore
+# Protects sensitive business data and credentials
+
+# ====================================
+# CRITICAL: API Keys and Credentials
+# ====================================
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+
+# Google Sheets API
+google-credentials.json
+service-account-key.json
+google-api-key.json
+sheets-config.json
+
+# Firebase Configuration
+firebase-config.js
+firebaseConfig.json
+firebase-adminsdk-*.json
+
+# OAuth Secrets
+oauth-secrets.json
+client-secret.json
+
+# Payment Processing Keys (future)
+stripe-keys.json
+square-credentials.json
+payment-config.json
+
+# ====================================
+# Business Sensitive Data
+# ====================================
+# Customer Data
+customer-data/
+customers.json
+bookings-export/
+booking-history/
+
+# Business Intelligence
+analytics/
+reports/
+financial-data/
+
+# Pricing Strategy (protect competitive info)
+pricing-analysis/
+competitor-data/
+
+# ====================================
+# Operating System Files
+# ====================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ====================================
+# IDE and Editor Files
+# ====================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# ====================================
+# Node.js (if you add tooling later)
+# ====================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.npm
+
+# ====================================
+# Build and Distribution
+# ====================================
+dist/
+build/
+*.min.js
+*.min.css
+
+# Compiled CSS from preprocessors
+*.css.map
+
+# ====================================
+# Logs and Databases
+# ====================================
+logs/
+*.log
+log/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# ====================================
+# Backup and Temporary Files
+# ====================================
+*.bak
+*.swp
+*.swo
+*~
+*.tmp
+temp/
+tmp/
+
+# ====================================
+# Testing
+# ====================================
+coverage/
+.nyc_output/
+test-results/
+
+# ====================================
+# Documentation Drafts
+# ====================================
+drafts/
+notes/
+TODO.md
+INTERNAL-NOTES.md
+
+# ====================================
+# Deployment Specific
+# ====================================
+# Deployment configs with real URLs
+deployment-config.json
+production-settings.json
+
+# SSL Certificates (if storing locally - shouldn't be!)
+*.pem
+*.key
+*.crt
+*.p12
+
+# ====================================
+# Version Control
+# ====================================
+.git/
+*.orig
+
+# ====================================
+# Archives
+# ====================================
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# ====================================
+# Your Actual Business Info
+# ====================================
+# Replace example data with these
+real-contact-info.json
+actual-pricing.json
+sf-location-details.json
+personal-info/
